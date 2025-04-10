@@ -60,6 +60,8 @@ Clone the repo
    ```bash
    git clone https://github.com/yourusername/ai-parking-system.git
    cd ai-parking-system
+```
 
 ## Demo
+
 ![Demo Preview](assets/ProjectPyAppGif.gif)
