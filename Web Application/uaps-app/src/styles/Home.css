@@ -1,0 +1,133 @@
+  .home {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-image: url("../assets/car-parking-lottest.png");
+  }
+
+  .headerContainer {
+    width: auto;
+    margin-left: 50px;
+    /*backdrop-filter: blur(3px); to blur background*/
+    margin-right: 50px;
+  }
+  
+  .headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    height: 60px;
+    font-weight: 50;
+    color: white;
+    font-size: 70px;
+  }
+  
+  .headerContainer h1:hover{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+  }
+  
+  .headerContainer button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    background-color: #ffc306;
+    height: 50px;
+    width: 180px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .headerContainer button:hover {
+    background-color: #ffc306;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .home {
+      justify-content: center;
+      align-items: center;
+      align-self: auto;
+      flex-wrap: nowrap;
+    }
+    .headerContainer {
+      margin-left: 0px;
+      border-radius: 10px;
+      margin-right: 0px;
+      padding: 10px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #ffffff00;
+      color: white;
+      align-self: center;
+      /*backdrop-filter: blur(3px); to blur background*/
+    }
+  
+    .headerContainer h1 {
+      font-size: 40px;
+      font-weight: bold;
+      height: 30px;
+      color: white;
+      text-align: center;
+    }
+  
+    .headerContainer p {
+      font-size: 30px;
+      color: white;
+      font-weight: bold;
+    }
+  
+    .headerContainer button {
+      background-color: #ffc306;
+      color: black;
+      margin-bottom: 30px;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }
+
+  /*.glow {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                   0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+      text-shadow: 0 0 15px #eeeeee, 0 0 20px #ffc306, 0 0 25px #ffc306, 0 0 30px #ffc306, 
+                   0 0 35px #ffc306, 0 0 40px #ffc306, 0 0 45px #ffc306;
+    }
+  }*/

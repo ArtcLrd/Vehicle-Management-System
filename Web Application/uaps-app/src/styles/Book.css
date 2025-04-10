@@ -1,0 +1,161 @@
+  .book {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-image: url("../assets/car-parking-lottest.png");
+  }
+
+  .seats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .book .heading{
+    color: white;
+    font-size: 60px;
+  }
+  
+  .seats .seat {
+    height: 8rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.2s ease;
+  }
+  
+  .seats .seat.occupied {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .seats .seat:focus {
+    outline: none;
+    box-shadow: 0 2px 6px 2px rgba(0, 127, 255, 0.5);
+  }
+  
+  .seats .seat:active {
+    transform: translateY(2px);
+  }
+  
+  .seats .seat:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* General form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Label styles */
+  .lbl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="email"] {
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 850px;
+  }
+  
+  /* Button styles */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffc306;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 55px;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+@media only screen and (max-width: 650px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 10px;
+        margin: 0 auto;
+        padding-top: 0;
+        align-items: center;
+      }
+
+      .book .heading{
+        color: white;
+        font-size: 40px;
+      }
+      
+      /* Label styles */
+      .lbl {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        color: white;
+        font-size: 18px;
+      }
+      
+      /* Input styles */
+      input[type="text"],
+      input[type="email"] {
+        align-items: left;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 250px;
+        height: 20px;
+      }
+      
+      /* Button styles */
+      button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #ffc306;
+        color: black;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 55px;
+        margin-top: 10px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+  }

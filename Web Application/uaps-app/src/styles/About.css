@@ -1,0 +1,131 @@
+.about {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-image: url("../assets/car-parking-lottest.png");
+}
+
+.rightSide {
+  width: 100%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.rightSide h1 {
+  font-size: 4.5rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+.rightSide h2 {
+  font-size: 3rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+.rightSide h3 {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-bottom: 1rem;
+}
+
+.rightSide p {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+.rightSide .details {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.rightSide .details h2 {
+  color: yellow;
+  margin-bottom: 1rem;
+}
+
+.rightSide .details h3 {
+  color: wheat;
+  margin-bottom: 0.3rem;
+}
+
+.rightSide .details p {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .rightSide {
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    align-self: auto;
+    flex-wrap: nowrap;
+  }
+  
+  .rightSide h1 {
+    align-items: center;    
+    font-size: 55px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+  .rightSide h2 {
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+  .rightSide h3 {
+    margin-left: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+  }
+  
+  .rightSide .abt {
+    text-align: center;
+    font-size: 18px;
+    color: whitesmoke;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .rightSide .details {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .rightSide .details h2 {
+    margin-top: 25px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .rightSide .details h3 {
+    margin-top: 10px;
+    color: wheat;
+    margin-bottom: 0.3rem;
+  }
+  
+  .rightSide .stu {
+    margin-left: 15px;
+    font-size: 18px;
+    color: whitesmoke;
+    line-height: 1.5;
+  }
+  .rightSide .details .stu {
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
